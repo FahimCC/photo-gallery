@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>API, JSON</title>
+
+		<!-- Font Awesome JS -->
+		<script
+			src="https://kit.fontawesome.com/a7b98052d6.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Tailwind -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							dark: '#414141',
+						},
+						fontFamily: {
+							inter: ['Inter', 'sans-serif'],
+						},
+					},
+					container: {
+						center: true,
+						padding: {
+							DEFAULT: '1rem',
+							md: '3rem',
+							lg: '4rem',
+							xl: '4rem',
+							'2xl': '4rem',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="container md:container">
+		<header
+			class="sticky top-0 z-50 bg-sky-50 my-6 py-6 px-3 rounded-md flex justify-between items-center shadow-lg"
+		>
+			<h1 class="text-4xl font-bold">Photo Gallery</h1>
+			<button
+				onclick="location.reload()"
+				class="bg-sky-400 px-3 py-2 rounded-md font-medium"
+			>
+				Refresh
+			</button>
+		</header>
+		<main class="relative my-6">
+			<section
+				id="img-container"
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+			></section>
+		</main>
+		<footer class="mt-6">
+			<p class="py-4 text-center bg-sky-50 rounded-md">
+				Copyright © 2023. Fahim Faysal
+			</p>
+		</footer>
+	</body>
+	<script src="js/script.js"></script>
+</html>
